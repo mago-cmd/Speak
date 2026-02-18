@@ -1,14 +1,16 @@
-# Speak
+# 🎧 Speak – Gravador e Transcritor de Áudio
 
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Whisper](https://img.shields.io/badge/Whisper-OpenAI-green)
+![Tkinter](https://img.shields.io/badge/Tkinter-GUI-orange)
+![Status](https://img.shields.io/badge/status-em%20testes-yellow)
 
-# Gravador e Transcritor de Áudio
-
-Este projeto é um gravador de áudio com transcrição automática desenvolvido em Python.  
-Ele permite gravar áudio do microfone, salvar em formato `.wav` e transcrever automaticamente para texto usando o modelo Whisper da OpenAI.
+Um gravador de áudio com transcrição automática desenvolvido em **Python**.  
+Ideal para entrevistas, reuniões ou estudos, permitindo gravar áudio e gerar transcrição em texto de forma simples.
 
 ---
 
-## Funcionalidades
+## ✨ Funcionalidades
 - Interface gráfica feita com Tkinter.
 - Botões para iniciar, pausar/retomar e encerrar gravações.
 - Exibição do tempo decorrido e barra de progresso.
@@ -19,63 +21,24 @@ Ele permite gravar áudio do microfone, salvar em formato `.wav` e transcrever a
 
 ---
 
-## Bibliotecas utilizadas
-- **tkinter / ttk** → Interface gráfica.
-- **sounddevice** → Captura de áudio do microfone.
-- **wave** → Salvamento do áudio em `.wav`.
-- **whisper** → Transcrição automática do áudio.
-- **os / datetime** → Manipulação de arquivos e pastas.
-- **threading** → Execução paralela (gravação e transcrição sem travar a interface).
-- **Pillow (PIL)** → Exibição de ícones `.ico` nos labels.
+## 📦 Bibliotecas utilizadas
+- **tkinter / ttk** → Interface gráfica  
+- **sounddevice** → Captura de áudio  
+- **wave** → Salvamento em `.wav`  
+- **whisper** → Transcrição automática  
+- **os / datetime** → Manipulação de arquivos  
+- **threading** → Execução paralela  
+- **Pillow (PIL)** → Ícones `.ico`  
 
 ---
 
-## Como executar
-1. Clone este repositório:
-   ```bash
-   git clone https://github.com/seuusuario/gravador-transcritor.git
+## 🚀 Como executar
+```bash
+# Clone o repositório
+git clone https://github.com/seuusuario/gravador-transcritor.git
 
-2. Instale as dependências
+# Instale as dependências
 pip install -r requirements.txt
 
-3. Execute o programa
+# Execute o programa
 python main.py
-
-
-## Gerando o .exe
-Este projeto inclui um arquivo .bat que automatiza a geração do executável .exe usando PyInstaller.
-Isso permite rodar o programa em qualquer máquina Windows sem precisar ter o Python instalado.
-
-1. Exemplo de comando usado no .bat:
-pyinstaller --onefile --windowed main.py --icon=microfone.ico
-
---onefile → gera um único arquivo .exe.
-
---windowed → oculta o terminal ao rodar.
-
---icon → define o ícone do executável.
-
-Após rodar o .bat, o .exe será gerado na pasta dist/.
-
-
-## Estrutura de saída
-Cada gravação gera uma pasta na Área de Trabalho com o nome:
-Grav-DD-MM_HHMM
-
-Dentro dela ficam:
-
-Áudio Gravado.wav → arquivo de áudio.
-
-Transcrição do Áudio.txt → transcrição automática.
-
-## Status
-Projeto funcional e pronto para uso.
-Porem ainda em testes
-
-
-## Observações
-O modelo Whisper utilizado é o small, equilibrando precisão e desempenho.
-
-É necessário ter o ffmpeg configurado (já incluído na pasta bin).
-
-O .bat facilita a distribuição do programa como .exe.
