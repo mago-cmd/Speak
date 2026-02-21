@@ -10,18 +10,17 @@ Ideal para entrevistas, reuniões ou estudos, permitindo gravar áudio e gerar t
 
 ---
 
-## ✨ Funcionalidades
+##  Funcionalidades
 - Interface gráfica feita com Tkinter.
 - Botões para iniciar, pausar/retomar e encerrar gravações.
 - Exibição do tempo decorrido e barra de progresso.
 - Criação automática de pastas na Área de Trabalho para organizar gravações.
 - Salvamento do áudio em `.wav` e da transcrição em `.txt`.
 - Transcrição automática em português usando Whisper.
-- Suporte a ícones `.ico` para estética da interface.
 
 ---
 
-## 📦 Bibliotecas utilizadas
+##  Bibliotecas utilizadas
 - **tkinter / ttk** → Interface gráfica  
 - **sounddevice** → Captura de áudio  
 - **wave** → Salvamento em `.wav`  
@@ -32,7 +31,7 @@ Ideal para entrevistas, reuniões ou estudos, permitindo gravar áudio e gerar t
 
 ---
 
-## 🚀 Como executar
+##  Como executar
 ```bash
 # Clone o repositório
 git clone https://github.com/seuusuario/gravador-transcritor.git
